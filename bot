@@ -12,7 +12,7 @@ $access_token = "2881882430-AlDTWW4vEHWnTXxav1LnGansQpZJ75uPmnyTJ3v";
 $access_token_secret = "x2GunLHFdRij5AsBR9TB2XEkqes04torl9bjnPzNAC412";
 
 // OAuthオブジェクト生成
-$to = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
+$to = new TwitterOAuth($X44sZ5xg27SsnrQwLHIPWO55l,$v9T6O0rotp2j2GsIcIgxWKdkPjIvF3Jpi7A7utz4oupgyxp9cC,$2881882430-AlDTWW4vEHWnTXxav1LnGansQpZJ75uPmnyTJ3v,$x2GunLHFdRij5AsBR9TB2XEkqes04torl9bjnPzNAC412);
 
 // TwitterへPOSTする。パラメーターは配列に格納する
 // in_reply_to_status_idを指定するのならば array("status"=>"@ouchini_kaerou","in_reply_to_status_id"=>"0000000000"); とする。
