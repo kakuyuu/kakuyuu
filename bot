@@ -1,6 +1,6 @@
 <?php
 // twitteroauth.phpを読み込む。パスはあなたが置いた適切な場所に変更してください
-require_once("kakuyuu");
+require_once("kakuyuubot");
 
 // Consumer keyの値
 $consumer_key = "X44sZ5xg27SsnrQwLHIPWO55l";
