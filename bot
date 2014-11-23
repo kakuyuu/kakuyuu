@@ -1,0 +1,23 @@
+<?php
+
+    require_once(dirname(__FILE__)."/twitteroauth/twitteroauth/twitteroauth.php");
+
+    // developer info
+    $consumerKey       = ‘X44sZ5xg27SsnrQwLHIPWO55l;
+    $consumerSecret    = 'v9T6O0rotp2j2GsIcIgxWKdkPjIvF3Jpi7A7utz4oupgyxp9cC';
+    $accessToken       = '2881882430-AlDTWW4vEHWnTXxav1LnGansQpZJ75uPmnyTJ3v';
+    $accessTokenSecret = 'x2GunLHFdRij5AsBR9TB2XEkqes04torl9bjnPzNAC412’;
+
+    $oAuth = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
+
+    // oAuth認証を利用し、twitterに投稿する
+    $TWITTER_STATUS_UPDATE_URL = "http://api.twitter.com/1.1/statuses/update.json";
+    $method  = 'POST';
+    $message = 'テスト';
+
+    $response = $oAuth->post('statuses/update', array('status' => $message));
+
+    // 結果出力
+    var_dump($response);
+
+?>
